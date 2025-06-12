@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌌 Weather Finder</h1>
+
+    <div class="search-box">
+      <input id="cityInput" type="text" placeholder="Enter city" />
+      <button onclick="getWeatherByCity()">🔍</button>
+      <button onclick="getWeatherByLocation()">📍</button>
+    </div>
+
+    <div id="weatherInfo" class="weather-info">
+      <h2 id="location"></h2>
+      <img id="icon" />
+      <p id="description"></p>
+      <p id="temp"></p>
+      <p id="extra"></p>
+    </div>
+
+    <div id="forecast" class="forecast-section">
+      <h3>5-Day Forecast</h3>
+      <div id="forecastCards" class="forecast-cards"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
